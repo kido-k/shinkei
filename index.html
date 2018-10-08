@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shinkeisuijaku</title>
+    <link rel="stylesheet" href="css/layout.css">
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- <script src="js/ai.js"></script> -->
+</head>
+
+<body>
+    <div class="toppage" style="width:100%;text-align:center;">
+        <img src="img/donald-trump.jpg" style="height:360px;" alt="">
+        <br>
+        <img src="img/moji.jpg" style="height:80px;" alt="">
+    </div>
+    <div class="toppage" style="width:100%;text-align:center;font-size:26px">
+        <button id="game26" class="exe">26枚でチャレンジ</button>
+        <button id="game52" class="exe">52枚でチャレンジ</button>
+    </div>
+    <div class="toppage" style="width:100%;text-align:center;font-size:26px">
+        <button id="ai26" class="exe">26枚を自動プレイ</button>
+        <button id="ai52" class="exe">52枚を自動プレイ</button>
+    </div>
+    <!-- <button id="check">チェック</button> -->
+
+    <div class="game">
+        <!-- <button id="ai" style='display:none'></button> -->
+        <p id="timer" style="width:100%;text-align:center;font-size:32px"></p>
+    </div>
+    <div id="bords" class="game" style="width:95%;height:95%;text-align:center;"></div>
+
+    <div class="result" style="width:100%;text-align:center;display:none">
+        <p style="font-size:80px;color: #aaa;text-shadow: 0 -1px #fff,0 -2px #fff, 0 8px 15px rgba(0,0,0,0.7);">GameClear</p>
+        <table id="rank" style="text-align:center">
+        </table>
+        <p id="goaltime" style="font-size:32px"></p>
+        <input id="name" type="text" style="font-size:18px;text-align:center;" placeholder="ニックネーム">
+        <button id="send">登録</button>
+        <br>
+        <a href="file:///C:/kadai/shinkei/index.html">トップに戻る</a>
+    </div>
+    <button id="hide" style="display:none">隠しボタン</button>
+</body>
+
+</html>
